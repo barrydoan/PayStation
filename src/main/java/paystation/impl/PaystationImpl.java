@@ -32,6 +32,7 @@ public class PaystationImpl implements Paystation {
 
     @Override
     public Receipt buy() {
+        System.out.println("Test");
         Receipt r =  new ReceiptImpl(timeBought);
         reset();
         return r;
